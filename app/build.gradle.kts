@@ -33,9 +33,19 @@ android {
     kotlinOptions {
         jvmTarget = "11"
     }
+
+   buildFeatures {
+           viewBinding = true // Enable View Binding
+   }
 }
 
 dependencies {
+
+    implementation(libs.androidx.lifecycle.viewmodel.ktx) // Use latest version
+    implementation(libs.androidx.lifecycle.runtime.ktx) // For lifecycleScope
+    implementation(libs.androidx.activity.ktx) // For viewModels delegate & permission handling
+
+    implementation(libs.kotlinx.coroutines.android) // Use latest stable
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
