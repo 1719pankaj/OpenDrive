@@ -34,7 +34,7 @@ graph TD
     C -- Updates --> B;
 
     style G fill:#f9f,stroke:#333,stroke-width:2px
-```mermaid
+```
 
 ## 4. Component Breakdown
 
